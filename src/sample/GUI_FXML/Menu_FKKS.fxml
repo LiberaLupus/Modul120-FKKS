@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GUI_Controller.Menu_Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1008.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Image/hintergrund.jpg" />
+         </image></ImageView>
+      <Label layoutX="413.0" layoutY="126.0" text="FKKS">
+         <font>
+            <Font size="80.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnueben" layoutX="439.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnuebenOA" prefHeight="43.0" prefWidth="122.0" text="Üben">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnbearbeiten" layoutX="439.0" layoutY="322.0" mnemonicParsing="false" onAction="#btnbearbeitenOA" prefHeight="43.0" prefWidth="122.0" text="Bearbeiten">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnbeenden" layoutX="439.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnbeendenOA" prefHeight="43.0" prefWidth="122.0" text="Logout">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

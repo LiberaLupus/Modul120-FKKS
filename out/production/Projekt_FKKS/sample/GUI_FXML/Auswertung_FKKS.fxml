@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GUI_Controller.Auswertung_Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Image/hintergrund.jpg" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="pcauswertung" layoutX="250.0" layoutY="100.0" prefHeight="319.0" prefWidth="500.0" title="Auswertung" />
+      <Button fx:id="btnbeenden" layoutX="461.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnbeendenOA" text="Beenden" AnchorPane.leftAnchor="461.0" />
+   </children>
+</AnchorPane>

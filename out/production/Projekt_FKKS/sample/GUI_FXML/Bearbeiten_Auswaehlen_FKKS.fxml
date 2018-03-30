@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GUI_Controller.Bearbeiten_Auswaehlen_Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Image/hintergrund.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblkartei" layoutX="280.0" layoutY="128.0" prefHeight="317.0" prefWidth="440.0">
+        <columns>
+          <TableColumn fx:id="tclfrage" prefWidth="219.0" text="Frage" />
+          <TableColumn fx:id="tclantwort" prefWidth="220.0" text="Antwort" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnladen" layoutX="853.0" layoutY="255.0" mnemonicParsing="false" onAction="#btnladenOA" prefHeight="31.0" prefWidth="92.0" text="Bearbeiten" />
+      <Button fx:id="btnloeschen" layoutX="755.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnloeschenOA" prefHeight="31.0" prefWidth="92.0" text="Löschen" />
+      <Button fx:id="btnabbrechen" layoutX="853.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnabbrechenOA" prefHeight="31.0" prefWidth="92.0" text="Abbrechen" />
+      <Button fx:id="btnerstellen" layoutX="755.0" layoutY="255.0" mnemonicParsing="false" onAction="#btnerstellenOA" prefHeight="31.0" prefWidth="92.0" text="Erstellen" />
+      <ComboBox fx:id="cbxauswahl" layoutX="60.0" layoutY="334.0" prefWidth="150.0" />
+      <Button fx:id="btnanzeigen" layoutX="94.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnanzeigenOA" text="Anzeigen" />
+      <ImageView fx:id="ivanzeigebild" fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/61yBNt0eFXL.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
